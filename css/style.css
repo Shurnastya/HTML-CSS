@@ -1,0 +1,652 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+}
+
+.up {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #3c5065;
+    background-image: url(../img/arow-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/*   HEADER  */
+.header {
+    background-color: #293942;
+}
+
+.header .wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    padding-left: 260px;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav a {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 25px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav li {
+    margin-right: 45px;
+}
+
+.entrance {
+    display: flex;
+}
+
+.sign-in {
+    margin-right: 40px;
+}
+
+.header .sign-in, .sign-up {
+    width: 160px;
+    height: 55px;
+    color: #7971E9;
+    font-size: 20px;
+    background-color: #293942;
+    border: 1px solid #7971E9;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.header .sign-in:hover {
+    color: white;
+    background-color: #7971E9;
+    transition: 0.7s;
+}
+
+.header .sign-up:hover {
+    color: white;
+    background-color: #7971E9;
+    transition: 0.7s;
+}
+
+.nav a:hover {
+    color: #7971E9;
+}
+
+/*  BURGER MENU   */
+.hidden-menu {
+    display: none;
+    width: 50px;
+    height: 30px;
+    z-index: 2;
+    top: 50px;
+    right: 30px;
+    position: fixed;
+}
+
+.hidden-menu input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+.hidden-menu .line {
+    background: white;
+    display: block;
+    width: 100%;
+    height: 6px;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+.nav-toggle .ico-arrow {
+    background-image: url(../img/Arrow.svg);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    position: absolute;
+}
+
+.hidden-menu .line:not(:last-child) {  
+    margin-bottom: 6px;
+}
+.hidden-menu input:checked ~ span 
+{   
+    background-color: #fff;
+    opacity: 1;
+    transform: translateY(12px) translateX(0) rotate(45deg);
+}
+
+.hidden-menu input:checked ~ span:nth-last-child(3) {
+    opacity: 0; 
+}
+
+.hidden-menu input:checked ~ span:nth-last-child(2) 
+{
+    transform: translateY(-12px) translateX(0) rotate(-45deg);
+}
+
+.header__toggle-menu {
+    height: 40px;
+    width: 40px;
+    top: 0;
+    right: -200px;
+    background-color: #7971E9;
+    z-index: -1;
+    overflow: hidden;
+    position: fixed;
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.hidden-menu input:checked ~ .header__toggle-menu {
+    opacity: 1;
+    overflow: visible;
+    right: -100px;
+    top: -70px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: fixed;
+}
+.nav-toggle {
+    margin-top: 46%;
+}
+
+.header__toggle-menu ul li {
+    text-align: center;
+    padding-right: 20%;
+    list-style: none;
+}
+
+.header__toggle-menu li a{
+    color: #F9F8FF;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.hidden-menu li a:hover {
+    font-weight: bold;
+}
+/*  BURGER MENU END  */
+
+/*   END   */
+
+/*  Страница 1  */
+.voice-control {
+    background-image: url("../img/fon.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 862px;
+    padding: 200px 0;
+}
+
+.voice-control h1 {
+    font-size: 48px;
+    color: #F9F8FF;
+    width: 55%;
+    margin-bottom: 40px;
+}
+
+.voice-control .free {
+    width: 210px;
+    height: 55px;
+    color: white;
+    font-size: 20px;
+    background-color: #7971E9;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 25px;
+    animation: blur .75s ease-out infinite;
+}
+
+.store {
+    display: flex;
+}
+
+.store a {
+    margin-right: 20px;
+}
+
+/*  END   */
+
+/*  Спонсоры    */
+.sponsors-bar {
+    background-color: #293942;
+}
+
+.sponsors {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sponsors a {
+    transition: 0.5s;
+}
+
+.sponsors a:hover {
+    transform: scale(1.1);
+}
+
+/*   END   */
+
+/*  Страница 2  */
+.favorite-music {
+    background-color: #1B262C;
+    padding: 40px 0;
+}
+
+.favorite-music .wrapper {
+    display: flex;
+}
+
+.favorite-music h2 {
+    color: #F9F8FF;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.favorite-music p {
+    color: rgba(249, 248, 255, 0.5);
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.favorite-music a {
+    color: #7971E9;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.performers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-right: 50px;
+}
+
+.starboy {
+    background-image: url("../img/Starboy.png");
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    transition: 0.5s;
+}
+
+.west {
+    background-image: url("../img/West.png");
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    transition: 0.5s;
+}
+
+.susamam {
+    background-image: url("../img/Susamam.png");
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    transition: 0.5s;
+}
+
+.eminem {
+    background-image: url("../img/Eminem.png");
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    transition: 0.5s;
+}
+
+.men {
+    background-image: url("../img/men.png");
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    transition: 0.5s;
+}
+
+.women {
+    background-image: url("../img/women.png");
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    transition: 0.5s;
+}
+
+.starboy:hover {
+    transform: scale(1.1);
+}
+
+.west:hover {
+    transform: scale(1.1);
+}
+
+.susamam:hover {
+    transform: scale(1.1);
+}
+
+.eminem:hover {
+    transform: scale(1.1);
+}
+
+.men:hover {
+    transform: scale(1.1);
+}
+
+.women:hover {
+    transform: scale(1.1);
+}
+
+.pushit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pushit .more {
+    display: flex;
+}
+
+.pushit .more a:first-child {
+    margin-right: 15px;
+}
+
+/*  END */
+
+/*  Страница 3  */
+.playlists {
+    background-color: #1B262C;
+    padding: 40px 0;
+    box-shadow: inset 0px 20px 30px 10px rgb(22 22 22 / 50%);
+}
+
+.playlists .wrapper {
+    display: flex;
+}
+
+.playlists h2 {
+    font-size: 48px;
+    color: #F9F8FF;
+    margin-bottom: 30px;
+}
+
+.playlists p {
+    font-size: 24px;
+    color: rgba(249, 248, 255, 0.5);
+    margin-bottom: 30px;
+}
+
+.playlists a {
+    color: #7971E9;
+    font-size: 24px;
+    text-decoration: none;
+    transform: rotate(45deg);
+}
+
+.original-playlists {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.playlists .player{
+    display: flex;
+}
+
+.playlists .playlists-starboy {
+    background-image: url(../img/BigStarboy.png);
+    background-repeat: no-repeat;	
+    width: 336px;
+    height: 533px;
+    transition: 1s;
+}
+
+.playlists .playlists-west {
+    background-image: url(../img/BigWest.png);
+    background-repeat: no-repeat;
+    width: 335px;
+    height: 533px;
+    transition: 1s;
+}
+
+.original-playlists .discover a:first-child {
+    margin-right: 15px;
+}
+
+.player:hover .playlists-starboy {
+    opacity: 0.4;
+    filter: blur(3px);
+}
+
+.player .playlists-starboy:hover {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1.1);
+}
+
+.player:hover .playlists-west {
+    opacity: 0.4;
+    filter: blur(3px);    
+}
+
+.player .playlists-west:hover {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1.1);
+}
+
+/*  END */
+
+/*  Страница 4  */
+.choice {
+    background-color: #1B262C;
+    padding: 20px 0;
+    box-shadow: inset 0px 20px 30px 10px rgb(22 22 22 / 50%);
+}
+
+.why-radiohead {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.choice h2 {
+    font-size: 48px;
+    color: #F9F8FF;
+    margin-bottom: 80px;
+}
+
+.choice h3 {
+    font-size: 32px;
+    color: #F9F8FF;
+    margin-bottom: 20px;
+}
+
+.choice p {
+    font-size: 24px;
+    color: rgba(249, 248, 255, 0.5);
+    width: 80%;
+    margin-bottom: 80px;
+}
+
+.choice h3::before {
+    content: url('../img/strip.png');
+    width: 5px;
+    height: 48px;
+    position: relative;
+    top: 15px;
+    left: -15px;
+}
+
+.choice h2:hover {
+    color: #7971E9;
+    transition: 0.5s;
+}
+
+.choice h3:hover {
+    color: #7971E9;
+    transition: 0.5s;
+}
+
+/*  END  */
+
+/*  Подвал  */
+
+.footer_top {
+    background-color: #293942;
+    padding-bottom: 130px;
+}
+
+.footer .footer_top .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_top p {
+    font-size: 18px;
+    color: rgba(249, 248, 255, 0.25);
+}
+
+.footer_top .logo-list-footer img {
+    margin-bottom: 45px;
+}
+
+.logo-list-footer p {
+    width: 400px;
+}
+
+.footer_top ul {
+    list-style: none;
+}
+
+.footer_top li {
+    margin-bottom: 20px;
+}
+
+.product-company {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.product-company p {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.product-company a {
+    font-size: 18px;
+    color: #F9F8FF;
+    text-decoration: none;
+}
+
+.footer_bot {
+    background-color: #1B262C;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.social .icon {
+    display: block;
+}
+
+.social .insta {
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    transition: 0.5s;
+}
+
+.social .fb {
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 32px;
+    transition: 0.5s;
+}
+
+.social .tw {
+    background-image: url(../img/twitter.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 34px;
+    transition: 0.5s;
+}
+
+.product-company a:hover {
+    color: #7971E9;
+    transition: 0.5s;
+}
+
+.insta:hover {
+    transform: scale(1.2);
+}
+
+.fb:hover {
+    transform: scale(1.2);
+}
+
+.tw:hover {
+    transform: scale(1.2);
+}

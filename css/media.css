@@ -1,0 +1,421 @@
+@keyframes blur {
+    from {
+      text-shadow:0px 0px 10px #fff,
+        0px 0px 10px #fff, 
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #ffffff,
+        0px 0px 100px #ffffff,
+        0px 5px 50px #ffffff,
+        0px 5px 50px #ffffff,
+        0px 5px 50px #ffffff,
+        0px 5px 50px #ffffff,
+        0px -5px 50px #7B96B8,
+        0px -5px 50px #7B96B8;
+    }
+  }
+
+  @media (max-width: 1310px) {
+    .voice-control {
+        height: auto;
+        padding: 100px 0;
+    }
+
+    .nav {
+        padding-left: 60px;
+    }
+  }
+
+  @media (max-width: 1190px) {
+    .performers {
+        opacity: 0.2;
+        margin-right: 0px;
+    }
+    .starboy:hover {
+        transform: none;
+    }
+    
+    .west:hover {
+        transform: none;
+    }
+    
+    .susamam:hover {
+        transform: none;
+    }
+    
+    .eminem:hover {
+        transform: none;
+    }
+    
+    .men:hover {
+        transform: none;
+    }
+    
+    .women:hover {
+        transform: none;
+    }
+
+    .favorite-music .wrapper {
+        position: relative;
+        justify-content: center;
+    }
+
+    .pushit {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .footer .footer_top .wrapper {
+        display: block;
+    }
+
+    .logo-list-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-list-footer p {
+        margin-bottom: 50px;
+    }
+
+    .footer_top {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 1075px) {
+    .player:hover .playlists-starboy {
+        opacity: 0.2;
+        filter: blur(0);
+    }
+    
+    .player .playlists-starboy:hover {
+        opacity: 0.2;
+        filter: blur(0);
+        transform: none;
+    }
+    
+    .player:hover .playlists-west {
+        opacity: 0.2;
+        filter: blur(0);    
+    }
+    
+    .player .playlists-west:hover {
+        opacity: 0.2;
+        filter: blur(0);
+        transform: none;
+    }
+
+    .playlists .playlists-starboy {
+        opacity: 0.2;
+    }
+
+    .playlists .playlists-west {
+        opacity: 0.2;
+    }
+
+    .original-playlists {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+    }
+
+    .playlists .wrapper {
+        position: relative;
+        justify-content: center;
+    }
+
+    .sponsors a:hover {
+        transform: scale(1);
+    }
+
+    .choice h2:hover {
+        color: white;
+        transition: 0s;
+    }
+    
+    .choice h3:hover {
+        color: white;
+        transition: 0s;
+    }
+
+    .insta:hover {
+        transform: scale(1);
+    }
+    
+    .fb:hover {
+        transform: scale(1);
+    }
+    
+    .tw:hover {
+        transform: scale(1);
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .hidden-menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header .wrapper {
+        justify-content: space-evenly;
+    }
+
+    .sponsors {
+        display: flex;
+        grid-template-columns: repeat(auto-fit,minmax(343px, 2fr));
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .playlists h2 {
+        text-align: center;
+    }
+
+    .favorite-music h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .header .sign-in, .sign-up {
+        width: 120px;
+    }
+
+    .choice h2 {
+        margin-bottom: 20px;
+    }
+
+    .why-radiohead {
+        display: block;
+    }
+
+    .choice p {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .performers {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hidden-menu {
+        top: 35px;
+    }
+
+    .logo-list {
+        margin-bottom: 20px;
+    }
+
+    .header .wrapper{
+        display: block;
+    }
+
+    .voice-control h1 {
+        font-size: 38px;
+    }
+
+    .voice-control .free {
+        width: 150px;
+    }
+
+    .favorite-music .wrapper {
+        padding: 0;
+    }
+
+    .performers {
+        grid-template-rows: none;
+    }
+
+    .men {
+        display: none;
+    }
+
+    .women {
+        display: none;
+    }
+
+    .hidden-menu {
+        right: 20px;
+    }
+
+    .choice h2 {
+        font-size: 38px;
+    }
+
+    .choice h3 {
+        font-size: 28px;
+    }
+
+    .choice p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 670px) {
+
+    .header .sign-in {
+        margin-bottom: 20px;
+    }
+
+
+    .playlists .playlists-west {
+        display: none;
+    }
+
+    .product-company {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .favorite-music h2 {
+        font-size: 38px;
+    }
+
+    .favorite-music p {
+        font-size: 20px;
+    }
+
+    .playlists h2 {
+        font-size: 38px;
+    }
+
+    .playlists p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .west {
+        display: none;
+    }
+
+    .eminem {
+        display: none;
+    }
+
+    .performers {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .voice-control h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .voice-control .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pushit {
+        width: 100%;
+        align-items: center;
+    }
+
+    .favorite-music p {
+        text-align: center;
+    }
+
+    .original-playlists {
+        width: 100%;
+        align-items: center;
+    }
+
+    .playlists p {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .sign-in {
+        margin-right: 20px;
+    }
+
+    .playlists h2 {
+        text-align: center;
+    }
+
+    .product-company p {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .footer_top li {
+        margin-bottom: 10px;
+    }
+
+    .logo-list-footer p {
+        width: 100%;
+    }
+
+    .choice h3 {
+        font-size: 22px;
+    }
+
+    .choice p {
+        font-size: 20px;
+    }
+
+    .choice h2 {
+        font-size: 38px;
+    }
+
+    .hidden-menu {
+        right: 5px;
+    }
+
+    .footer_top p {
+        font-size: 14px;
+    }
+
+    .product-company a {
+        font-size: 14px;
+    }
+
+    .store {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .voice-control {
+        padding: 10px 0;
+    }
+
+    .favorite-music h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 340px) {
+    .playlists .playlists-starboy {
+        width: 320px;
+    }
+}
